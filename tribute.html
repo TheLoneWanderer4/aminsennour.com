@@ -66,12 +66,17 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   @media (max-width: 900px) {
+    #title_bar {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
     .shadow{
       left: 0;
       width: calc(100% - 30px);
     }
     .title_img{
-      width: 0%;
+      padding: 15px;
+      width: calc(100% - 15px);
     }
   }
 </style>
