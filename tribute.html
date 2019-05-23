@@ -5,8 +5,8 @@
     font-size: 20px;
   }
   #title_bar {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     background: #cccfd1;
     background: #cecece;
@@ -14,6 +14,7 @@
   }
   #title{
     width: 1500px;
+    max-width: 100%;
     font-size: 85px;
     display: flex;
     flex-direction: column;
@@ -66,9 +67,6 @@
     .shadow{
       left: 0;
       width: calc(100% - 30px);
-    }
-    .title_img{
-      width: 0;
     }
   }
   .title_img {
