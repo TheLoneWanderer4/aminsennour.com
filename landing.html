@@ -6,71 +6,84 @@
     background: #b0e8f2;
     font-family: stylish;
   }
-  @media (max-width: 500px) {
-    #body{
-      background: white;
-    }
-  }
-  #header{
+
+  .header{
     background: #f9cd7f;
+
     position: fixed;
-    height: 5vh;
-    width: 100%;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 50% 50%;
+
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+
     z-index: 1;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+    width: 100%;
+    height: 60px;
   }
+
   #header-img{
-    margin: 0px 0px 0px 15px;
-    height: 100%;
-    justify-self: start;
+    height: calc(100% - 10px);
+    margin: 5px;
   }
-  #nav-bar{
-    margin: 0px 15px 0px 0px;
-    width: 95%;
-    justify-self: end;
+  .nav{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-  }
-  .nav-link{
-    background: white;
-    border: 0px solid;
-    border-radius: 4px;
-    font-size: 1em;
-    height: 100%;
+
     width: 100%;
-    margin: 0px 15px 0px 15px;
+  }
+
+  .nav-link{
+    background: #f9cd7f;
+
+    border: 0px solid;
+    cursor: pointer;
+
+    text-align: center;
+    text-decoration: none;
+    color: 0;
+
+    overflow-y:auto;
+    overflow-x:auto;
   }
   .nav-link:hover{
-    background: white;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    color: grey;
   }
+
+
   #content{
     position: relative;
-    top: 7vh;
+    top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
   }
   #video{
-    margin: 15px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+    width: 900px;
+    height: 506px;
+    max-width: calc(95vw - 30px);
+    max-height: calc(50vw - 30px);
+    margin: 15px;
   }
   #form{
-    margin: 15px;
     display: flex;
     flex-direction: column;
+
+    max-width: calc(100% - 30px);
+    margin: 15px;
   }
   #email{
     border: 0px solid;
     border-radius: 4px;
     background: white;
     padding: 15px;
-    width: 100%;
+    width: calc(100% - 30px);
     color: black;
   }
   #email:hover{
@@ -91,7 +104,7 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   }
   #description{
-    height: 95vh;
+    
   }
   .download{
     align: center;
@@ -103,26 +116,36 @@
     width: 50%;
     margin: 0px 15px 0px 15px;
   }
+
+
   #footer{
-    width: 100%;
-    height: 100px;
     background: #f4f8ff;
+
     display: grid;
-    grid-template-columns: 33% 34% 33%;
-    grid-template-rows: 50px 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
+
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+    width: calc(100% - 20px);
+    height: 100%;
+    margin: 0;
+    padding: 10px;
   }
   .copyright{
+    grid-column: 1 / 4;
+
     text-align: center;
-    grid-column: 2 / 3;
+
     width: 100%;
+    height: 100%;
   }
   #line{
     width: 100%;
   }
-  a {
+  #footer a {
     color: #000;
     text-decoration: none;
   }
@@ -135,9 +158,9 @@
     <title></title>
   </head>
   <body id='body'>
-    <header id='header'>
+    <header class='header'>
       <img id='header-img' src="https://d1vhcvzji58n1j.cloudfront.net/assets/pop/os-logo-b44ed4fc34_2560.png" alt="">
-      <nav id='nav-bar'>
+      <nav class='nav'>
         <button class = 'nav-link' type="button" name="button" onclick="window.location.href = 'landing.html#description';" href='#description'> Features </button>
         <button class = 'nav-link' type="button" name="button" onclick="window.location.href = 'landing.html#video';" href='#video'> Level1Linux </button>
         <button class = 'nav-link' type="button" name="button" onclick="window.location.href = 'landing.html#form';" href='#form'> Sign up to hear more </button>
@@ -153,7 +176,7 @@
         </ul>
         <button class = 'download' type="button" name="button" onclick="window.location.href = 'https://pop-iso.sfo2.digitaloceanspaces.com/19.04/amd64/intel/4/pop-os_19.04_amd64_intel_4.iso';" href='https://pop-iso.sfo2.digitaloceanspaces.com/19.04/amd64/intel/4/pop-os_19.04_amd64_intel_4.iso'> Download </button>
       </div>
-      <iframe id='video' width="854" height="480" src="https://www.youtube.com/embed/IGEoXH-zUyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id='video' src="https://www.youtube.com/embed/IGEoXH-zUyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <form id='form' action="https://www.freecodecamp.com/email-submit" method="post">
         <h2> Sign up to hear more! </h2>
         <input id='email' type="email" name="email" value="email" placeholder="Enter your email">
