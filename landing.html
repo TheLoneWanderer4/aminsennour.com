@@ -36,8 +36,8 @@
   }
 
   #header-img{
-    height: calc(100% - 10px);
-    margin: 5px;
+    height: calc(100% - 30px);
+    margin: 15px;
   }
   .nav{
     display: flex;
@@ -80,14 +80,22 @@
     align-items: center;
   }
   .download{
+    background: #b3d9ff;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
     align: center;
-    background: white;
     border: 0px solid;
     border-radius: 4px;
     font-size: 1em;
-    height: 40px;
-    width: 50%;
+
+    max-height: calc(100% - 60px);
+    max-width: calc(100% - 60px);
     margin: 15px;
+    padding: 15px;
+  }
+  .download:hover{
+    color: grey;
   }
 
   .video-div{
@@ -184,7 +192,7 @@
       </nav>
     </header>
     <div id='content'>
-      <div class='card' id = description'>
+      <div class='card' id = 'description'>
         <h1> Welcome to Pop!_Os</h1>
         <ul>
           <li> Thing </li>
