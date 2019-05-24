@@ -174,19 +174,29 @@
     margin-bottom: 100px;
   }
   .contact-tile{
-    border-radius: 50px;
-    max-width: calc(100%- 50px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 200px;
+    height: 75px;
+    max-width: calc(90% - 60px);
+    max-height: calc(100% - 60px);
     margin: 25px;
+    padding: 5px;
   }
   .contact-tile a{
     color: black;
     text-decoration: none;
 
-    max-width: calc(100%- 50px);
-    padding: 25px;
+    max-width: 50%;
   }
   .contact-tile a:hover{
     color: #33cccc;
+  }
+  .contact-tile img{
+    width: 70px;
+    max-width: 50%;
   }
 
   @media (max-width: 900px) {
@@ -288,24 +298,31 @@
       <div class="contact-grid">
         <h1 class ='card shadow contact-title'> Get in touch with me! </h1>
         <div class="card shadow  content contact-tile">
+          <img src="https://logos-download.com/wp-content/uploads/2016/02/Twitter_Logo_new.png" alt="Twitter logo">
           <a target="blank" href="https://twitter.com/catsrock45"> Twitter</a>
         </div>
         <div class="card shadow content contact-tile">
+          <img src="Octocat.jpg" alt="Github Icon">
           <a id='profile-link' target="_blank" href="https://github.com/TheLoneWanderer4">Github</a>
         </div>
         <div class="card shadow content contact-tile">
+          <img src="email.png" alt="letter icon">
           <a href="mailto:aminsennour@gmail.com">Email</a>
         </div>
         <div class="card shadow content contact-tile">
+          <img src="phone.png" alt="Phone icon">
           <a href="tel: 214 226 9216">Phone</a>
         </div>
         <div class="card shadow content contact-tile">
+          <img src="Linkden.svg" alt="Linkedin logo">
           <a target='blank' href="https://www.linkedin.com/in/aminsennour/">Linkedin</a>
         </div>
         <div class="card shadow content contact-tile">
+          <img src="FCC.png" alt="Free code camp logo">
           <a target='blank' href="https://www.freecodecamp.org/nafal">FCC</a>
         </div>
         <div class="card shadow content contact-tile">
+          <img src="telegram.png" alt="telegram logo">
           <a target='blank' href=" https://t.me/nafal45">Telegram</a>
         </div>
       </div>
