@@ -3,9 +3,21 @@
 <style media="screen">
   #body{
     margin: 0;
-    background: #b0e8f2;
+    background: #9999cc;
     font-family: stylish;
   }
+  .card{
+    background: white;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+    width: 900px;
+    max-width: calc(100vw - 60px);
+
+    margin: 15px;
+    padding: 15px;
+  }
+
 
   .header{
     background: #f9cd7f;
@@ -56,22 +68,16 @@
 
   #content{
     position: relative;
-    top: 60px;
+    top: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   #description{
-    background: #b3d9ff;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-
-    width: 100%;
   }
   .download{
     align: center;
@@ -85,15 +91,9 @@
   }
 
   .video-div{
-    background: pink;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-
-    width: 100%;
   }
   #video{
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
@@ -105,16 +105,9 @@
     margin: 15px;
   }
   #form{
-    background: #b0f2c7;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-
-    width: 100%;
-    margin: 0;
   }
   #email{
     border: 0px solid;
@@ -155,8 +148,7 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 
     width: calc(100% - 20px);
-    height: 100%;
-    margin: 0;
+    margin-top: 15px;
     padding: 10px;
   }
   .copyright{
@@ -192,19 +184,23 @@
       </nav>
     </header>
     <div id='content'>
-      <div id = 'description'>
+      <div class='card' id = description'>
         <h1> Welcome to Pop!_Os</h1>
         <ul>
           <li> Thing </li>
           <li> Look how pretty </li>
           <li> FASTTT </li>
         </ul>
-        <button class = 'download' type="button" name="button" onclick="window.location.href = 'https://pop-iso.sfo2.digitaloceanspaces.com/19.04/amd64/intel/4/pop-os_19.04_amd64_intel_4.iso';" href='https://pop-iso.sfo2.digitaloceanspaces.com/19.04/amd64/intel/4/pop-os_19.04_amd64_intel_4.iso'> Download </button>
+        <button class = 'download' type="button" name="button" onclick="window.location.href =
+        'https://pop-iso.sfo2.digitaloceanspaces.com/19.04/amd64/intel/4/pop-os_19.04_amd64_intel_4.iso';"
+        href='https://pop-iso.sfo2.digitaloceanspaces.com/19.04/amd64/intel/4/pop-os_19.04_amd64_intel_4.iso'> Download </button>
       </div>
-      <div class="video-div">
-        <iframe id='video' src="https://www.youtube.com/embed/IGEoXH-zUyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="card video-div">
+        <h1> Video </h1>
+        <iframe id='video' src="https://www.youtube.com/embed/IGEoXH-zUyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
       </div>
-      <form id='form' action="https://www.freecodecamp.com/email-submit" method="post">
+      <form class='card' id='form' action="https://www.freecodecamp.com/email-submit" method="post">
         <h2> Sign up to hear more! </h2>
         <input id='email' type="email" name="email" value="email" placeholder="Enter your email">
         <input id = 'submit' type="submit" name="button">
