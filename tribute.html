@@ -61,7 +61,7 @@
     position: relative;
     top: 65px;
     width: 900px;
-    max-width: calc(100% - 40px);
+    max-width: calc(100vw - 40px);
     margin: 15px;
     padding: 5px 5px 5px 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -78,7 +78,8 @@
       grid-template-rows: 1fr 1fr 1fr;
     }
     .shadow{
-      left: 0;
+      width: 80vw;
+      max-width: calc(100vw - 40px);
     }
     .title_img{
       padding: 15px;
