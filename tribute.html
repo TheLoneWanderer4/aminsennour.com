@@ -1,5 +1,10 @@
 <style media="screen">
   #main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
     background: #cccfd1;
     font-size: 20px;
@@ -55,15 +60,15 @@
   .shadow {
     position: relative;
     top: 65px;
-    left: 10vw;
-    width: 80vw;
+    width: 900px;
+    max-width: calc(100% - 40px);
     margin: 15px;
     padding: 5px 5px 5px 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
   }
   .title_img {
-    width: 100%;
+    width: calc(100% - 15px);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   @media (max-width: 1100px) {
@@ -74,7 +79,6 @@
     }
     .shadow{
       left: 0;
-      width: calc(100% - 30px);
     }
     .title_img{
       padding: 15px;
