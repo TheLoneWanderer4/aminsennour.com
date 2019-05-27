@@ -86,33 +86,36 @@
 
   .intro-section{
     font-size: 3em;
-    width: 900px;
-    padding: 15px;
+    width: 800px;
+    padding: 50px;
     max-width: calc(80% - 30px);
+    padding-bottom: 40px;
   }
   .intro-section p{
     color: #33cccc;
     font-size: 0.5em;
     margin-top: 0;
+    margin-bottom: 0;
   }
   .intro-section h1{
-    margin-bottom: 0;
+    margin: 0;
   }
 
 
   .projects{
     background: #b3d9ff;
-
+  }
+  .project-grid{
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 33% 34% 33%;
     justify-items: center;
 
-    width: 100%;
+    max-width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
   }
   .project-title{
-    grid-column: 1/2;
+    grid-column: 1/4;
     justify-self: center;
 
     width: 700px;
@@ -121,45 +124,48 @@
     padding: 15px;
   }
   .project-tile{
-    background: white;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5fr 1fr;
-    justify-items: center;
-
-    width: 600px;
-    height: 400px;
-    max-width: calc(100% - 100px);
-    max-height: calc(100% - 100px);
-    margin: 50px;
+    width: 400px;
+    height: 85px;
+    max-width: calc(100% - 80px);
+    max-height: calc(100% - 80px);
+    margin: 25px;
+    padding: 15px;
   }
   .project-tile a{
-    border-top: #cdd0d6 solid;
-    color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: black;
     text-decoration: none;
 
-    align-self: end;
-
-    width: 100%;
-    padding: 15px;
-    max-width: calc(100% - 30px);
-    max-height: calc(100% - 30px);
+    max-width: 100%;
+    max-height: 100%;
   }
   .project-tile a:hover{
     color: #33cccc;
   }
-  .project-tile-img{
-    align-self: center;
+  .project-tile img{
+    width: 70px;
+    max-width: calc(50% - 20px);
+    max-height: calc(100% - 20px);
+    margin: 10px;
+  }
+  .project-see-more{
+    grid-column: 1/4;
+    justify-self: center;
 
-    max-width: calc(100% - 30px);
-    max-height: calc(100% - 30px);
+    color: black;
+    text-decoration: none;
+
+    width: 200px;
+    max-width: calc(80% - 30px);
     padding: 15px;
+    margin-top: 100px;
   }
-  .padding-fix{
-
+  .project-see-more:hover{
+    color: #33cccc;
   }
-
 
   .contact{
     background: #b0f2c7;
@@ -211,7 +217,7 @@
   }
 
   @media (max-width: 900px) {
-      .projects{
+      .project-grid{
         grid-template-columns: 100%;
       }
       .project-title{
@@ -221,6 +227,9 @@
         width: 50%;
         max-width: calc(60%- 50px);
         margin: 25px;
+      }
+      .project-see-more{
+        grid-column: 1/2;
       }
       .contact-grid{
         grid-template-columns: 100%;
@@ -287,25 +296,25 @@
       <section class='intro-section card shadow content'>
           <h1> Hi, I'm Amin.</h1>
           <p> {a developer}  </p>
+          <p> {CS major at the UofA} </p>
       </section>
     </section>
-    <section id='projects' class='projects shadow'>
-      <h1 class ='card shadow project-title'> Look at the things I've made </h1>
-      <div class="project-tile shadow">
-        <img class='project-tile-img' src="http://cdn.onlinewebfonts.com/svg/img_545278.png" alt="">
-        <a class='card shadow' href="landing.html"> Pop!_Os <hr  size='1'> A demo product page</a>
-      </div>
-      <div class="project-tile shadow">
-        <img class='project-tile-img' src="http://media.hiringlibrary.com.s3.amazonaws.com/wp-content/uploads/18111050/Linked-List-as-Data-Structure.png" alt="">
-        <a class='card shadow' href="tech.html"> LinkedLists <hr  size='1'> Technical documentation page </a>
-      </div>
-      <div class="project-tile shadow">
-        <img class='project-tile-img' src="https://www.spacestationexplorers.org/wp-content/uploads/2018/02/seds-usa-logo-1.jpg" alt="">
-        <a class='card shadow' href="voting.html"> SEDS Election <hr  size='1'> A voting form</a>
-      </div>
-      <div class="project-tile shadow">
-        <img class='project-tile-img' src="https://static.thenounproject.com/png/99969-200.png" alt="">
-        <a class='card shadow' href="tribute.html"> Almaty <hr  size='1'> A tribute to the beautiful city</a>
+    <section id='projects' class='projects shadow content'>
+      <div class="project-grid">
+        <h1 class ='card shadow project-title'> Look at the things I've made </h1>
+        <div class="project-tile shadow card content">
+          <a href="landing.html"> <img src="html.svg" alt="html/css logo"> Pop!_Os, a demo product page </a>
+        </div>
+        <div class="project-tile shadow card content">
+          <a href="tech.html"> <img src="html.svg" alt="html/css logo"> LinkedLists, a technical documentation page </a>
+        </div>
+        <div class="project-tile shadow card content">
+          <a href="voting.html"> <img src="html.svg" alt="html/css logo"> SEDS Election, a voting form </a>
+        </div>
+        <div class="project-tile shadow card content">
+          <a href="tribute.html"> <img src="html.svg" alt="html/css logo"> Almaty, a tribute to the beautiful city </a>
+        </div>
+        <a class='card shadow project-see-more' href="https://github.com/TheLoneWanderer4?tab=repositories">See more</a>
       </div>
     </section>
     <section id='contact' class='contact shadow content'>
