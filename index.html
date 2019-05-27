@@ -104,7 +104,7 @@
     background: #b3d9ff;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33% 34% 33%;
     justify-items: center;
 
     width: 100%;
@@ -121,35 +121,43 @@
     padding: 15px;
   }
   .project-tile{
-    justify-content: center;
+    background: white;
 
-    max-width: calc(100%- 100px);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    justify-items: center;
+
+    width: 600px;
+    height: 400px;
+    max-width: calc(100% - 100px);
+    max-height: calc(100% - 100px);
     margin: 50px;
-    padding: 0;
   }
   .project-tile a{
     border-top: #cdd0d6 solid;
     color: #000;
     text-decoration: none;
 
+    align-self: end;
+
     width: 100%;
     padding: 15px;
-    margin-top: 15px;
     max-width: calc(100% - 30px);
+    max-height: calc(100% - 30px);
   }
   .project-tile a:hover{
     color: #33cccc;
   }
   .project-tile-img{
-    background: white;
+    align-self: center;
 
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
+    max-width: calc(100% - 30px);
+    max-height: calc(100% - 30px);
+    padding: 15px;
   }
   .padding-fix{
-    padding: 15px;
-    width: calc(100% - 30px);
+
   }
 
 
@@ -283,20 +291,20 @@
     </section>
     <section id='projects' class='projects shadow'>
       <h1 class ='card shadow project-title'> Look at the things I've made </h1>
-      <div class="project-tile content">
-        <img class='project-tile-img  padding-fix shadow' src="https://d1vhcvzji58n1j.cloudfront.net/assets/pop/os-logo-b44ed4fc34_2560.png" alt="">
+      <div class="project-tile shadow">
+        <img class='project-tile-img' src="https://cdns.iconmonstr.com/wp-content/assets/preview/2013/240/iconmonstr-linux-os-1.png" alt="">
         <a class='card shadow' href="landing.html"> Pop!_Os <hr  size='1'> A demo product page</a>
       </div>
-      <div class="project-tile  content">
-        <img class='project-tile-img shadow' src="https://koenig-media.raywenderlich.com/uploads/2016/09/SwiftAlgClub-LinkedList-feature.png" alt="">
+      <div class="project-tile shadow">
+        <img class='project-tile-img' src="http://media.hiringlibrary.com.s3.amazonaws.com/wp-content/uploads/18111050/Linked-List-as-Data-Structure.png" alt="">
         <a class='card shadow' href="tech.html"> LinkedLists <hr  size='1'> Technical documentation page </a>
       </div>
-      <div class="project-tile content">
-        <img class='project-tile-img shadow' src="https://www.spacestationexplorers.org/wp-content/uploads/2018/02/seds-usa-logo-1.jpg" alt="">
+      <div class="project-tile shadow">
+        <img class='project-tile-img' src="https://www.spacestationexplorers.org/wp-content/uploads/2018/02/seds-usa-logo-1.jpg" alt="">
         <a class='card shadow' href="voting.html"> SEDS Election <hr  size='1'> A voting form</a>
       </div>
-      <div class="project-tile content">
-        <img class='project-tile-img shadow' src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg" alt="">
+      <div class="project-tile shadow">
+        <img class='project-tile-img' src="https://static.thenounproject.com/png/99969-200.png" alt="">
         <a class='card shadow' href="tribute.html"> Almaty <hr  size='1'> A tribute to the beautiful city</a>
       </div>
     </section>
