@@ -126,24 +126,30 @@
   .project-tile{
     width: 400px;
     height: 85px;
-    max-width: calc(100% - 80px);
-    max-height: calc(100% - 80px);
+    max-width: calc(100% - 100px);
+    max-height: calc(100% - 100px);
     margin: 25px;
-    padding: 15px;
+    padding: 25px;
   }
   .project-tile a{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
 
+    text-align: center;
     color: black;
     text-decoration: none;
 
+    width: 100%;
     max-width: 100%;
     max-height: 100%;
   }
   .project-tile a:hover{
     color: #33cccc;
+  }
+  .project-tile p{
+    margin: auto;
   }
   .project-tile img{
     width: 70px;
@@ -303,16 +309,16 @@
       <div class="project-grid">
         <h1 class ='card shadow project-title'> Look at the things I've made </h1>
         <div class="project-tile shadow card content">
-          <a href="landing.html"> <img src="html.svg" alt="html/css logo"> Pop!_Os, a demo product page </a>
+          <a href="landing.html"> <img src="html.svg" alt="html/css logo"> <p>Pop!_Os, a demo product page</p> </a>
         </div>
         <div class="project-tile shadow card content">
-          <a href="tech.html"> <img src="html.svg" alt="html/css logo"> LinkedLists, a technical documentation page </a>
+          <a href="tech.html"> <img src="html.svg" alt="html/css logo"> <p>LinkedLists, a technical documentation page </p> </a>
         </div>
         <div class="project-tile shadow card content">
-          <a href="voting.html"> <img src="html.svg" alt="html/css logo"> SEDS Election, a voting form </a>
+          <a href="voting.html"> <img src="html.svg" alt="html/css logo"> <p>SEDS Election, a voting form</p> </a>
         </div>
         <div class="project-tile shadow card content">
-          <a href="tribute.html"> <img src="html.svg" alt="html/css logo"> Almaty, a tribute to the beautiful city </a>
+          <a href="tribute.html"> <img src="html.svg" alt="html/css logo"> <p>Almaty, a tribute to the beautiful city</p> </a>
         </div>
         <a class='card shadow project-see-more' href="https://github.com/TheLoneWanderer4?tab=repositories">See more</a>
       </div>
