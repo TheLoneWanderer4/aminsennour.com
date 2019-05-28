@@ -271,7 +271,7 @@
     background: #f4f8ff;
 
     display: grid;
-    grid-template-columns: 33% 34% 33%;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
@@ -284,7 +284,7 @@
     padding: 10px;
   }
   .copyright{
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
 
     text-align: center;
 
@@ -312,6 +312,7 @@
     <header class='header'>
       <nav id='navbar' class='nav shadow'>
         <button class = 'nav-link'  onclick="window.location.href = '#welcome-section';" > <a class='nav-link' href="#welcome-section">About</a> </button>
+        <button class = 'nav-link'  onclick="window.location.href = '#education';"> Education </button>
         <button class = 'nav-link'  onclick="window.location.href = '#projects';"> Work </button>
         <button class = 'nav-link'  onclick="window.location.href = '#contact';"> Contact </button>
       </nav>
@@ -387,6 +388,7 @@
     </section>
     <footer id='footer' class='shadow'>
       <a href="#welcome-section"> About</a>
+      <a href="#education">Education</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
       <div class="copyright"> <hr id='line' size='1'> This is a personal website </div>
