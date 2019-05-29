@@ -1,4 +1,4 @@
-# Aminsennour.me
+# Aminsennour.com
 
 Hello and welcome to the source code behind my personal website, my first major foray into the world of web development.
 
