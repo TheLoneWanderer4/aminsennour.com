@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/risk-calc/static/css/main.8125ee64.chunk.css",
-    "main.js": "/risk-calc/static/js/main.8d8773e3.chunk.js",
-    "main.js.map": "/risk-calc/static/js/main.8d8773e3.chunk.js.map",
-    "runtime~main.js": "/risk-calc/static/js/runtime~main.019b60f4.js",
-    "runtime~main.js.map": "/risk-calc/static/js/runtime~main.019b60f4.js.map",
-    "static/js/2.4baf41ce.chunk.js": "/risk-calc/static/js/2.4baf41ce.chunk.js",
-    "static/js/2.4baf41ce.chunk.js.map": "/risk-calc/static/js/2.4baf41ce.chunk.js.map",
-    "index.html": "/risk-calc/index.html",
-    "precache-manifest.964bb28e330c6e8dd576cca9adb15df9.js": "/risk-calc/precache-manifest.964bb28e330c6e8dd576cca9adb15df9.js",
-    "service-worker.js": "/risk-calc/service-worker.js",
-    "static/css/main.8125ee64.chunk.css.map": "/risk-calc/static/css/main.8125ee64.chunk.css.map"
+    "main.css": "/risk/static/css/main.8125ee64.chunk.css",
+    "main.js": "/risk/static/js/main.8d8773e3.chunk.js",
+    "main.js.map": "/risk/static/js/main.8d8773e3.chunk.js.map",
+    "runtime~main.js": "/risk/static/js/runtime~main.5f471766.js",
+    "runtime~main.js.map": "/risk/static/js/runtime~main.5f471766.js.map",
+    "static/js/2.4baf41ce.chunk.js": "/risk/static/js/2.4baf41ce.chunk.js",
+    "static/js/2.4baf41ce.chunk.js.map": "/risk/static/js/2.4baf41ce.chunk.js.map",
+    "index.html": "/risk/index.html",
+    "precache-manifest.600dec1561ccca10423f33ae6a201a6b.js": "/risk/precache-manifest.600dec1561ccca10423f33ae6a201a6b.js",
+    "service-worker.js": "/risk/service-worker.js",
+    "static/css/main.8125ee64.chunk.css.map": "/risk/static/css/main.8125ee64.chunk.css.map"
   }
 }
