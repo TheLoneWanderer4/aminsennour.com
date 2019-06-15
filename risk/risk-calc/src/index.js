@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import { HashRouter, Route, Link } from "react-router-dom";
 
 var seedrandom = require("seedrandom");
 
@@ -119,31 +120,33 @@ class FormComponent extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} className="form">
-        <h1 className="card title"> Risk Calc </h1>
-        <label className="form-element card">
-          Attack:
-          <input
-            className="form-input"
-            type="number"
-            value={this.state.Attack}
-            onChange={this.handleChangeAttack}
-          />
-        </label>
-        <label className="form-element card">
-          Defense:
-          <input
-            className="form-input"
-            type="number"
-            value={this.state.Defense}
-            onChange={this.handleChangeDefense}
-          />
-        </label>
-        <input className="submit card" type="submit" value="Submit" />
-        {this.renderInfo()}
-        {this.renderWin()}
-        <Reset onClick={() => this.handleReset()} />
-      </form>
+      <HashRouter basename="/">
+        <form onSubmit={this.handleSubmit} className="form">
+          <h1 className="card title"> Risk Calc </h1>
+          <label className="form-element card">
+            Attack:
+            <input
+              className="form-input"
+              type="number"
+              value={this.state.Attack}
+              onChange={this.handleChangeAttack}
+            />
+          </label>
+          <label className="form-element card">
+            Defense:
+            <input
+              className="form-input"
+              type="number"
+              value={this.state.Defense}
+              onChange={this.handleChangeDefense}
+            />
+          </label>
+          <input className="submit card" type="submit" value="Submit" />
+          {this.renderInfo()}
+          {this.renderWin()}
+          <Reset onClick={() => this.handleReset()} />
+        </form>
+      </HashRouter>
     );
   }
 }
